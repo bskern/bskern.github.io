@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "bskern"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Barry Kern"
+description              : "Software Engineer"
+url                      : https://bskern.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : bskern/bskern.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "_bkern"
 facebook:
   username               :
   app_id                 :
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Barry Kern"
+  avatar           : "assets/images/bskern.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              :
+  location         :
   email            :
   uri              :
   bitbucket        :
@@ -89,18 +89,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "bskern"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "barrettkern"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "112665/barry" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "_bkern"
   vine             :
   weibo            :
   xing             :
@@ -111,6 +111,7 @@ author:
 include:
   - .htaccess
   - _pages
+  
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -233,7 +234,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _pages
   - scope:
       path: ""
       type: posts
@@ -241,6 +242,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      #comments: # true
       share: true
       related: true
+ # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
