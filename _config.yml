@@ -70,9 +70,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-87703995-1
 
 
 # Site Author
@@ -111,7 +111,7 @@ author:
 include:
   - .htaccess
   - _pages
-  
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
